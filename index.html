@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>GUESS CORRECT PASSWORD PLACEMENT</title>
+</head>
+<body>
+    <!-- DOM MANIPULATION -->
+    <div class="info" onclick="callInfo()">
+      ❔
+    </div>
+    <section class="container">
+        <div class="header">
+            CRACK THE PASSCODE
+        </div>
+        <div class="alert">
+            <div class="success">INCORRECT PLACEMENT</div>
+            <div class="danger">INVALID NUMBER</div>
+        </div>
+        <div class="box">
+            <div class="cell active" key="0">0</div>
+            <input title="something" type="number" value="0" min="0" max="9" id="_0">
+            
+            <div class="cell" key="1">0</div>
+            <input title="something" type="number" value="0" min="0" max="9" id="_1">
+            
+            <div class="cell" key="2">0</div>
+            <input title="something" type="number" value="0" min="0" max="9" id="_2">
+            
+            <div class="cell" key="3">0</div>
+            <input title="something" type="number" value="0" min="0" max="9" id="_3">
+        </div>
+
+        <div class="trials"></div>
+    </section>
+
+    <section class="control-container">
+        <div class="controler"> 
+          <div class="btn" onclick="runLeft()">
+            <div class="icon" ><span><</span></div>
+          </div>
+          <div class="btn" onclick="runRight()">
+            <div class="icon" ><span>></span></div>
+          </div>
+          <div class="btn" onclick="runUp()">
+            <div class="icon rtUp"><span><</span></div>
+          </div>
+          <div class="btn" onclick="runDown()">
+            <div class="icon rtDown"><span>></span></div>
+          </div>
+          <div class="btn" onclick="check()">
+            <div class="icon"><span>E</span></div>
+          </div>
+          
+          <div class="btn" onclick="reset()">
+            <div class="icon"><span>C</span></div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="modal-message">
+        <div class="message"></div> 
+      </div>
+
+    <script src="/assets/js/app.js"></script> 
+</body>
+</html>
